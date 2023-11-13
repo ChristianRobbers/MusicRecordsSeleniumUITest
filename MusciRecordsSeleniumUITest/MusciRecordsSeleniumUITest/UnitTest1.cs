@@ -28,7 +28,8 @@ namespace MusciRecordsSeleniumUITest
         [TestMethod]
         public void TestMethod1()
         {
-
+            driver.Navigate().GoToUrl("https://musicrecordsui.azurewebsites.net/");
+            Assert.AreEqual("MusicRecordsUI", driver.Title);
 
           
         }
